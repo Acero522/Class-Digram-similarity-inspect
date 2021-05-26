@@ -4,13 +4,13 @@ import sys
 from PyQt5 import QtCore, QtWidgets
 import GED
 import os
-m1='123'
-m2='123'
+
 class Example(QWidget):
 
     def __init__(self):
         super().__init__()
-
+        self.path1='123'
+        self.path2='2134'
         self.initUI()
 
 
@@ -38,33 +38,32 @@ class Example(QWidget):
         self.setWindowTitle('calculate')
         self.show()
 
-    def msg(self, Filepath):
-        m = QtWidgets.QFileDialog.getExistingDirectory(None, "选取文件夹", "C:/")  # 起始路径
-        m1=m
-        print(m1)
+    def msg(self):
+        m = QtWidgets.QFileDialog.getOpenFileName(None, "选取文件", "./")  # 起始路径
+        m = m[0]
+        self.path1=m
+        print(self.path1)
         self.le.setText(m)
 
-    def msg2(self, Filepath):
-        print(m1)
-        m = QtWidgets.QFileDialog.getExistingDirectory(None, "选取文件夹", "C:/")  # 起始路径
-        m2=m
-        print(m2)
+
+    def msg2(self):
+        m = QtWidgets.QFileDialog.getOpenFileName(None, "选取文件", "./")  # 起始路径
+        m = m[0]
+        self.path2=m
         self.le2.setText(m)
 
     def calculate(self):
-        print(m1,m2)
-        os.system('python GED.py --g1 ./data/image1_1.gxl --g2 ./data/image1_2.gxl')
-
-        text, ok = QInputDialog.getText(self, 'Input Dialog',
-            '路径1:')
-        text2,ok=QInputDialog.getText(self, 'Input Dialog',
-            '路径2:')
-        if ok:
-            self.le.setText(m1)
-            self.le2.setText(str(text2))
+        print(self.path1,self.path2)
+        command='python GED.py --g1 ./data/image1_1.gxl --g2 ./data/image1_2.gxl'
+        r = os.popen(command)  # 执行该命令
+        info = r.readlines()  # 读取命令行的输出到一个list
+        for line in info:  # 按行遍历
+            print(line)
 
 
 if __name__ == '__main__':
+    m1 = '123'
+    m2 = '123'
     app = QApplication(sys.argv)
     ex = Example()
     sys.exit(app.exec_())
