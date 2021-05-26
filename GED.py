@@ -29,7 +29,7 @@ if __name__ == "__main__":
                                edge_del_cost=GREC.edge_deletion_cost,
                                edge_ins_cost=GREC.node_insertion_cost)
 
-        print("optimal distance :::", distance)
+        print("optimal distance:", distance)
 
         # if you want to output the distance and all the possible optimal pathz, you can use the optimal_edit_paths function
 
