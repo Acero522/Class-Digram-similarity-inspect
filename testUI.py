@@ -42,7 +42,6 @@ class Example(QWidget):
         m = QtWidgets.QFileDialog.getOpenFileName(None, "选取文件", "./")  # 起始路径
         m = m[0]
         self.path1=m
-        print(self.path1)
         self.le.setText(m)
 
 
@@ -53,8 +52,8 @@ class Example(QWidget):
         self.le2.setText(m)
 
     def calculate(self):
-        print(self.path1,self.path2)
-        command='python GED.py --g1 ./data/image1_1.gxl --g2 ./data/image1_2.gxl'
+        #print(self.path1,self.path2)
+        command='python GED.py --g1 '+self.path1+' --g2 '+self.path2
         r = os.popen(command)  # 执行该命令
         info = r.readlines()  # 读取命令行的输出到一个list
         for line in info:  # 按行遍历
