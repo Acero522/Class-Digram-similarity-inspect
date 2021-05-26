@@ -2,7 +2,7 @@ import networkx as nx
 from graphs_parser import loadGXL
 from grec_cost_functions import *
 import argparse
-
+#python GED.py --g1 ./data/image1_1.gxl --g2 ./data/image1_2.gxl
 def parse_args():
     parser = argparse.ArgumentParser(description='Graph Edit Distance')
     parser.add_argument('--g1', type=str, help='source graph')
