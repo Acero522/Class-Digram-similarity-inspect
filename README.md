@@ -14,7 +14,7 @@ networkx==2.3
 
 pyqt5  
 
-**Run the Code ** 
+**Run the Code**   
 ```python mainUI.py```    
 
 **Result**
