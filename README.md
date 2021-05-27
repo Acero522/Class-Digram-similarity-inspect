@@ -21,6 +21,8 @@ pyqt5
 
 ![avatar](/pic/1.png)
 
+![avatar](/pic/2.gif)
+
 **Reference**
 
 [NetworkX_Graph_Edit_Distance](https://github.com/zeinaabuaisheh/NetworkX_Graph_Edit_Distance)
