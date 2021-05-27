@@ -45,7 +45,7 @@ class Example(QWidget):
         self.re2.move(280, 250)
 
         self.setGeometry(1000, 400, 600, 500)
-        self.setWindowTitle('calculate')
+        self.setWindowTitle('Class-Digram-similarity-inspect')
         self.show()
 
     def msg(self):
