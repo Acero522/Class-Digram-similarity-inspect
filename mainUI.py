@@ -1,8 +1,6 @@
-from PyQt5.QtWidgets import (QWidget, QPushButton, QLineEdit,QTextEdit,
-    QInputDialog, QApplication,QLabel)
+from PyQt5.QtWidgets import (QWidget, QPushButton, QLineEdit,QTextEdit,QApplication,QLabel)
 import sys
-from PyQt5 import QtCore, QtWidgets
-import GED
+from PyQt5 import QtWidgets
 import os
 
 class Example(QWidget):
