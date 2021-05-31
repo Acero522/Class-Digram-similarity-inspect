@@ -39,7 +39,8 @@ class Example(QWidget):
                  # QPushButton:pressed{
                  #     border: 2px solid DarkGray;
                  #     background:rgb(255, 255, 255, 30);
-                 # }''')
+                 #}
+                  ''')
 
         self.btn.move(240, 130)
         self.btn.clicked.connect(self.calculate)
