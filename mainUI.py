@@ -25,7 +25,7 @@ class Example(QWidget):
         self.setFont(QFont("黑体", 10, True))  #设置字体
         self.btn = QPushButton('calculate', self)
         self.btn.setIcon(QIcon(QPixmap('./asset/计算器.png')))
-         self.btn.setStyleSheet(
+        self.btn.setStyleSheet(
              '''QPushButton{
                      color:black;
                      font-family:黑体;
@@ -36,11 +36,10 @@ class Example(QWidget):
                      border: 1px solid Gray;
                      background:rgb(255, 255, 255, 90);
                  }
-                 # QPushButton:pressed{
-                 #     border: 2px solid DarkGray;
-                 #     background:rgb(255, 255, 255, 30);
-                 #}
-                  ''')
+                 QPushButton:pressed{
+                     border: 2px solid DarkGray;
+                     background:rgb(255, 255, 255, 30);
+                 }''')
 
         self.btn.move(240, 130)
         self.btn.clicked.connect(self.calculate)
