@@ -28,9 +28,7 @@ class Example(QWidget):
         self.btn.setStyleSheet(
              '''QPushButton{
                      color:black;
-                     font-family:黑体;
-                     border: 2px solid DarkGray;
-                     background:rgb(255, 255, 255, 60);
+                     font-family:黑体;    
                  }
                  QPushButton:hover{
                      border: 1px solid Gray;
@@ -49,11 +47,15 @@ class Example(QWidget):
         self.btn2.clicked.connect(self.msg)
         self.btn2.move(180, 90)
 
-
         self.btn3 = QPushButton('选择文件2', self)
         self.btn3.setIcon(QIcon(QPixmap('./asset/file.png')))
         self.btn3.clicked.connect(self.msg2)
         self.btn3.move(300, 90)
+
+        self.btn4 = QPushButton('走你', self)
+        self.btn4.setIcon(QIcon(QPixmap('./asset/大巴.png')))
+        self.btn4.clicked.connect(self.msg3)
+        self.btn4.move(100, 320)
 
         self.le = QLineEdit('文件1', self)
         self.le.move(200, 20)
@@ -73,7 +75,6 @@ class Example(QWidget):
                 border-radius:10px;         
                 padding:2px 4px; }''')
 
-
         self.lb2 = QLabel("possable path", self)
         self.lb2.move(140, 250)
 
@@ -87,11 +88,17 @@ class Example(QWidget):
     def msg(self):
         m = QtWidgets.QFileDialog.getOpenFileName(None, "选取文件", "./GREC/data")  # 起始路径
         m = m[0]
-        self.path1=m
+        self.path1 = m
         self.le.setText(m)
 
     def msg2(self):
         m = QtWidgets.QFileDialog.getOpenFileName(None, "选取文件", "./GREC/data")  # 起始路径
+        m = m[0]
+        self.path2 = m
+        self.le2.setText(m)
+
+    def msg3(self):
+        m = QtWidgets.QFileDialog.getOpenFileName(None, "开车", "./canvasFilter/index.html")  # 起始路径
         m = m[0]
         self.path2 = m
         self.le2.setText(m)
