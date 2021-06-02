@@ -1,4 +1,5 @@
 argparse
 python==3.6
 networkx==2.3 
+pyqt
 

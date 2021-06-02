@@ -2,9 +2,10 @@ from PyQt5.QtWidgets import (QWidget, QPushButton, QLineEdit, QTextEdit, QApplic
 import sys
 from PyQt5 import QtWidgets, QtCore, QtGui
 import os
-from PyQt5.QtCore import pyqtSlot, QFileInfo, pyqtSignal, QBuffer, QByteArray, QIODevice, QSize, Qt
-from PyQt5.QtGui import QMovie, QPixmap, QIcon, QFont
-
+from PyQt5.QtCore import *
+from PyQt5.QtGui import *
+from PyQt5.QtWebEngineWidgets import *
+import webbrowser
 LOADING_GIF_URL = './asset/loading.gif'
 
 
@@ -12,8 +13,8 @@ class Example(QWidget):
 
     def __init__(self):
         super().__init__()
-        self.path1 = '123'
-        self.path2 = '2134'
+        self.path1 = ' '
+        self.path2 = ' '
         self.initUI()
 
     def initUI(self):
@@ -81,7 +82,7 @@ class Example(QWidget):
         self.re2 = QTextEdit('路径列表', self)
         self.re2.move(300, 250)
 
-        self.setGeometry(1000, 400, 600, 500)
+        self.setGeometry(1000, 400, 600, 450)
         self.setWindowTitle('哦吼哦吼')
         self.show()
 
@@ -98,10 +99,9 @@ class Example(QWidget):
         self.le2.setText(m)
 
     def msg3(self):
-        m = QtWidgets.QFileDialog.getOpenFileName(None, "开车", "./canvasFilter/index.html")  # 起始路径
-        m = m[0]
-        self.path2 = m
-        self.le2.setText(m)
+        current_path = os.path.abspath("./canvasFilter/index.html")
+        webbrowser.open('file:///'+current_path)
+
 
     def calculate(self):
         command = 'python GED.py --g1 '+self.path1+' --g2 '+self.path2
