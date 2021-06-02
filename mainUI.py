@@ -18,7 +18,7 @@ class Example(QWidget):
 
     def initUI(self):
 
-        self.setWindowOpacity(1)  # 设置窗口透明度
+        self.setWindowOpacity(0.9)  # 设置窗口透明度
         self.label = QtWidgets.QLabel(self)
         self.label.setGeometry(QtCore.QRect(0, 0, 680, 450))
         self.label.setPixmap(QtGui.QPixmap("./asset/hh.jpg"))
@@ -65,6 +65,10 @@ class Example(QWidget):
 
         self.lb1 = QLabel("optimal distance", self)
         self.lb1.move(140, 200)
+        self.lb1.setStyleSheet(
+            '''QLabel{         
+                color:white;
+                font-family:黑体; }''')
 
         self.re1 = QLineEdit('计算距离', self)
         self.re1.move(300, 200)
@@ -77,6 +81,10 @@ class Example(QWidget):
 
         self.lb2 = QLabel("possable path", self)
         self.lb2.move(140, 250)
+        self.lb2.setStyleSheet(
+            '''QLabel{         
+                color:white;
+                font-family:黑体; }''')
 
         self.re2 = QTextEdit('路径列表', self)
         self.re2.move(300, 250)
@@ -98,7 +106,7 @@ class Example(QWidget):
         self.le2.setText(m)
 
     def msg3(self):
-        m = QtWidgets.QFileDialog.getOpenFileName(None, "开车", "./canvasFilter/index.html")  # 起始路径
+        m = QtWidgets.QFileDialog.getOpenFileName(None, "走你", "./canvasFilter/index.html")  # 起始路径
         m = m[0]
         self.path2 = m
         self.le2.setText(m)
