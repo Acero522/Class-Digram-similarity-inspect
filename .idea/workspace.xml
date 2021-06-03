@@ -19,8 +19,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f16d144a-7fbb-437d-9ec4-f98ab76eff10" name="Default Changelist" comment="">
+    <list default="true" id="f16d144a-7fbb-437d-9ec4-f98ab76eff10" name="Default Changelist" comment="修改">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image2Text/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image2Text/batch_image/a/微信截图_20181106091449.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image2Text/batch_image/a/微信截图_20181106091457.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image2Text/batch_image/b/微信截图_20181106091437.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image2Text/batch_image/gg.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image2Text/batch_image/微信截图_20181106091503.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image2Text/ui_image2text.py" beforeDir="false" afterPath="$PROJECT_DIR$/Image2Text/ui_image2text.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/canvasFilter/StackBlur.js" beforeDir="false" afterPath="$PROJECT_DIR$/canvasFilter/StackBlur.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mainUI.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainUI.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -196,8 +204,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1622012687716</updated>
-      <workItem from="1622607400963" duration="1319000" />
+      <workItem from="1622607400963" duration="8583000" />
+      <workItem from="1622634669501" duration="6234000" />
+      <workItem from="1622698032689" duration="689000" />
     </task>
+    <task id="LOCAL-00001" summary="修改">
+      <created>1622613187556</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1622613187556</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,8 +233,12 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Class_Digram_similarity_inspect$main.coverage" NAME="main Coverage Results" MODIFIED="1622612623635" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Image2Text" />
-    <SUITE FILE_PATH="coverage/Class_Digram_similarity_inspect$mainUI.coverage" NAME="mainUI Coverage Results" MODIFIED="1622613112536" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Class_Digram_similarity_inspect$main.coverage" NAME="main Coverage Results" MODIFIED="1622637615057" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Image2Text" />
+    <SUITE FILE_PATH="coverage/Class_Digram_similarity_inspect$mainUI.coverage" NAME="mainUI Coverage Results" MODIFIED="1622642969992" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

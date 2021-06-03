@@ -1,11 +1,11 @@
+import webbrowser
+
 from PyQt5.QtWidgets import (QWidget, QPushButton, QLineEdit, QTextEdit, QApplication, QLabel)
 import sys
 from PyQt5 import QtWidgets, QtCore, QtGui
 import os
 from PyQt5.QtCore import pyqtSlot, QFileInfo, pyqtSignal, QBuffer, QByteArray, QIODevice, QSize, Qt
 from PyQt5.QtGui import QMovie, QPixmap, QIcon, QFont
-
-LOADING_GIF_URL = './asset/loading.gif'
 
 
 class Example(QWidget):
@@ -52,7 +52,7 @@ class Example(QWidget):
         self.btn3.clicked.connect(self.msg2)
         self.btn3.move(300, 90)
 
-        self.btn4 = QPushButton('走你', self)
+        self.btn4 = QPushButton('像素处理', self)
         self.btn4.setIcon(QIcon(QPixmap('./asset/大巴.png')))
         self.btn4.clicked.connect(self.msg3)
         self.btn4.move(100, 320)
@@ -106,10 +106,14 @@ class Example(QWidget):
         self.le2.setText(m)
 
     def msg3(self):
-        m = QtWidgets.QFileDialog.getOpenFileName(None, "走你", "./canvasFilter/index.html")  # 起始路径
-        m = m[0]
-        self.path2 = m
-        self.le2.setText(m)
+        current_path = os.path.abspath("./canvasFilter/index.html")
+        webbrowser.open('file:///' + current_path)
+
+    # def msg3(self):
+    #     m = QtWidgets.QFileDialog.getOpenFileName(None, "走你", "./canvasFilter/index.html")  # 起始路径
+    #     m = m[0]
+    #     self.path2 = m
+    #     self.le2.setText(m)
 
     def calculate(self):
         command = 'python GED.py --g1 '+self.path1+' --g2 '+self.path2

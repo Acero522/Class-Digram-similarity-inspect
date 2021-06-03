@@ -1,12 +1,3 @@
-# -*- coding: utf-8 -*-
-
-# Form implementation generated from reading ui file 'ui_image2text.ui'
-#
-# Created: Tue Jul 10 20:15:37 2018
-#      by: PyQt5 UI code generator 5.4
-#
-# WARNING! All changes made in this file will be lost!
-
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 class Ui_image2textWidget(object):
