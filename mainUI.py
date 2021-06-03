@@ -4,16 +4,13 @@ from PyQt5.QtWidgets import (QWidget, QPushButton, QLineEdit, QTextEdit, QApplic
 import sys
 from PyQt5 import QtWidgets, QtCore, QtGui
 import os
-<<<<<<< HEAD
 from PyQt5.QtCore import pyqtSlot, QFileInfo, pyqtSignal, QBuffer, QByteArray, QIODevice, QSize, Qt
 from PyQt5.QtGui import QMovie, QPixmap, QIcon, QFont
-=======
 from PyQt5.QtCore import *
 from PyQt5.QtGui import *
-from PyQt5.QtWebEngineWidgets import *
 import webbrowser
 LOADING_GIF_URL = './asset/loading.gif'
->>>>>>> b9da661c301e47be340a357b70f0dcfa37aa7b91
+
 
 
 class Example(QWidget):
@@ -115,18 +112,8 @@ class Example(QWidget):
 
     def msg3(self):
         current_path = os.path.abspath("./canvasFilter/index.html")
-<<<<<<< HEAD
         webbrowser.open('file:///' + current_path)
 
-    # def msg3(self):
-    #     m = QtWidgets.QFileDialog.getOpenFileName(None, "走你", "./canvasFilter/index.html")  # 起始路径
-    #     m = m[0]
-    #     self.path2 = m
-    #     self.le2.setText(m)
-=======
-        webbrowser.open('file:///'+current_path)
-
->>>>>>> b9da661c301e47be340a357b70f0dcfa37aa7b91
 
     def calculate(self):
         command = 'python GED.py --g1 '+self.path1+' --g2 '+self.path2

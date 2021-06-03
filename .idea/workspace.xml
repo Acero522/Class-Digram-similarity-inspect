@@ -21,15 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f16d144a-7fbb-437d-9ec4-f98ab76eff10" name="Default Changelist" comment="修改">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Image2Text/.vscode/settings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Image2Text/batch_image/a/微信截图_20181106091449.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Image2Text/batch_image/a/微信截图_20181106091457.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Image2Text/batch_image/b/微信截图_20181106091437.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Image2Text/batch_image/gg.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Image2Text/batch_image/微信截图_20181106091503.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Image2Text/ui_image2text.py" beforeDir="false" afterPath="$PROJECT_DIR$/Image2Text/ui_image2text.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/canvasFilter/StackBlur.js" beforeDir="false" afterPath="$PROJECT_DIR$/canvasFilter/StackBlur.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainUI.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainUI.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,7 +197,8 @@
       <updated>1622012687716</updated>
       <workItem from="1622607400963" duration="8583000" />
       <workItem from="1622634669501" duration="6234000" />
-      <workItem from="1622698032689" duration="689000" />
+      <workItem from="1622698032689" duration="1077000" />
+      <workItem from="1622699190423" duration="17000" />
     </task>
     <task id="LOCAL-00001" summary="修改">
       <created>1622613187556</created>
